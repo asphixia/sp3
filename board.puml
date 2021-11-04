@@ -1,0 +1,63 @@
+@startuml
+
+class team extends bracket{
+String teamID;
+int ranking;
+
+getTeamId()
+getTeamScore()
+getTeamRanking()
+}
+class registerTeams extends team {
+String teamName;
+String teamId;
+int numberOfPlayers;
+
+generateTeamId()
+
+
+}
+
+class bracket{
+String teams;
+int numberOfTeams;
+String team1;
+String team2;
+
+
+generateBracket())
+ArrayList<teams>
+}
+
+class ranking extends results{
+String teamID;
+Int goalDiference;
+int NumberOfWins;
+
+generateTeamRanking()
+ArrayList<ranking>
+}
+
+class admin extends registerTeams, bracket{
+String teams;
+int getTeamScore;
+
+viewTeam()
+removeTeam()
+adjustBracket()
+getBracket()
+updateBracket()
+}
+class results extends bracket {
+int points;
+int goalsScored;
+int goalsConseded;
+
+matchResult()
+goalDiference()
+}
+
+
+
+
+@enduml
